@@ -72,7 +72,7 @@ export default function TextArea() {
     </>
   );
 }
-!(function () {
+!function () {
   function a(a, b, c) {
     "undefined" == typeof c && ((c = b), (optionsValues = void 0));
     var d = "undefined" != typeof a ? a : b;
@@ -94,12 +94,10 @@ export default function TextArea() {
         .attr("height", b || a.offsetHeight)
         .style("overflow", "hidden")),
       this.options.responsive &&
-        (n
-          .select(this.options.element)
-          .style({
-            position: "relative",
-            "padding-bottom": 100 * this.options.aspectRatio + "%",
-          }),
+        (n.select(this.options.element).style({
+          position: "relative",
+          "padding-bottom": 100 * this.options.aspectRatio + "%",
+        }),
         n
           .select(this.options.element)
           .select("svg")
@@ -11783,4 +11781,4 @@ export default function TextArea() {
         var c = new m(a);
         return "function" == typeof b && b(c, a), this;
       });
-})();
+};
